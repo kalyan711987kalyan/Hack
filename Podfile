@@ -6,6 +6,6 @@ target 'HackthonSample' do
   use_frameworks!
 
   # Pods for HackthonSample
-  #pod 'Clarifai-Apple-SDK', '3.0.0-beta20'
+  pod 'Clarifai-Apple-SDK', '3.0.0-beta20'
 
 end

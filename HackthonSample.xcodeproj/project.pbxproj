@@ -12,9 +12,6 @@
 		304A370D210F3E5B0092839D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 304A370C210F3E5B0092839D /* libsqlite3.tbd */; };
 		304A370F210F3E690092839D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 304A370E210F3E670092839D /* libz.tbd */; };
 		304A3714210F43080092839D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304A3713210F43080092839D /* TestViewController.m */; };
-		304A371A210F478A0092839D /* Clarifai_Apple_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304A3719210F478A0092839D /* Clarifai_Apple_SDK.framework */; };
-		304A371B210F47950092839D /* Clarifai_Apple_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304A3719210F478A0092839D /* Clarifai_Apple_SDK.framework */; };
-		304A371C210F47950092839D /* Clarifai_Apple_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 304A3719210F478A0092839D /* Clarifai_Apple_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30C3FF3920FCB3CF00BDA8E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C3FF3820FCB3CF00BDA8E0 /* AppDelegate.swift */; };
 		30C3FF3B20FCB3CF00BDA8E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C3FF3A20FCB3CF00BDA8E0 /* ViewController.swift */; };
 		30C3FF3E20FCB3CF00BDA8E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C3FF3C20FCB3CF00BDA8E0 /* Main.storyboard */; };
@@ -32,7 +29,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				304A371C210F47950092839D /* Clarifai_Apple_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +43,6 @@
 		304A3711210F43080092839D /* HackthonSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackthonSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		304A3712210F43080092839D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		304A3713210F43080092839D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		304A3719210F478A0092839D /* Clarifai_Apple_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Clarifai_Apple_SDK.framework; path = Clarifai/Clarifai_Apple_SDK.framework; sourceTree = SOURCE_ROOT; };
 		30C3FF3520FCB3CF00BDA8E0 /* HackthonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackthonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C3FF3820FCB3CF00BDA8E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30C3FF3A20FCB3CF00BDA8E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,10 +67,8 @@
 				304A370B210F3E390092839D /* CoreGraphics.framework in Frameworks */,
 				304A3709210F3E280092839D /* Accelerate.framework in Frameworks */,
 				30C3FF4E20FCCE7D00BDA8E0 /* Vision.framework in Frameworks */,
-				304A371A210F478A0092839D /* Clarifai_Apple_SDK.framework in Frameworks */,
 				30C3FF4C20FCCE7400BDA8E0 /* CoreML.framework in Frameworks */,
 				713BD73DC149A62145492932 /* Pods_HackthonSample.framework in Frameworks */,
-				304A371B210F47950092839D /* Clarifai_Apple_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +78,6 @@
 		304A3718210F47730092839D /* Clarifai */ = {
 			isa = PBXGroup;
 			children = (
-				304A3719210F478A0092839D /* Clarifai_Apple_SDK.framework */,
 			);
 			name = Clarifai;
 			path = "New Group";
@@ -161,7 +153,6 @@
 				30C3FF3220FCB3CF00BDA8E0 /* Frameworks */,
 				30C3FF3320FCB3CF00BDA8E0 /* Resources */,
 				304A371D210F47950092839D /* Embed Frameworks */,
-				304A371E210F47A10092839D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,19 +211,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		304A371E210F47A10092839D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PROJECT_DIR/Clarifai/setup_framework.sh\"\n";
-		};
 		C57A95753D3915A56518DB45 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

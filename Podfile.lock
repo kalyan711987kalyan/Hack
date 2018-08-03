@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: a7372394c4efab02bcd487350c5f3733558eaf11
+PODS:
+  - Clarifai-Apple-SDK (3.0.0-beta20)
+
+DEPENDENCIES:
+  - Clarifai-Apple-SDK (= 3.0.0-beta20)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Clarifai-Apple-SDK
+
+SPEC CHECKSUMS:
+  Clarifai-Apple-SDK: e1023ab08623a9e96b6a991ac343c6425c838ee0
+
+PODFILE CHECKSUM: 5d2228b2e02639e97014194eb6c1e4e6f59c43ba
 
 COCOAPODS: 1.5.3
